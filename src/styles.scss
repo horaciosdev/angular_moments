@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+$default-font-color: #444;
+$link-hover-color: #dec129;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    color: $default-font-color;
+}
+
+a {
+    text-decoration: none;
+    color: $default-font-color;
+    transition: .4s;
+    &:hover {
+        color: $link-hover-color;    
+    }
+}
+
