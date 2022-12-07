@@ -2,19 +2,66 @@ $default-font-color: #444;
 $link-hover-color: #dec129;
 
 * {
-    padding: 0;
-    margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-sizing: border-box;
-    color: $default-font-color;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+  color: $default-font-color;
 }
 
 a {
-    text-decoration: none;
-    color: $default-font-color;
-    transition: .4s;
-    &:hover {
-        color: $link-hover-color;    
-    }
+  text-decoration: none;
+  color: $default-font-color;
+  transition: 0.4s;
+  &:hover {
+    color: $link-hover-color;
+  }
 }
 
+/* FORM */
+form {
+  width: 450px;
+  margin: 0 auto;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    label {
+      font-weight: bold;
+      font-size: 0.9em;
+      margin-bottom: 0.4em;
+    }
+
+    input,
+    textarea {
+      padding: 0.6em;
+      color: #777;
+      font-size: 0.8em;
+    }
+  }
+  input[type="submit"] {
+    background-color: #efefef;
+    border: solid 2px transparent;
+    padding: 0.6em 1em;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      color: #dec129;
+      border-color: #dec129;
+      background-color: transparent;
+    }
+  }
+}
+
+.validation-error {
+  p {
+    color: #dc3545;
+    margin-top: 0.4em;
+    border-left: 3px solid #dc3545;
+    padding-left: 0.2em;
+  }
+}

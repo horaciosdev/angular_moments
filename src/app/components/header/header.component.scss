@@ -1,0 +1,42 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  border-bottom: solid 1px #777;
+}
+
+.brand,
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  li {
+    margin-right: 1em;
+    list-style: none;
+  }
+  a {
+    padding: 0.1em 0.3em;
+  }
+}
+
+.brand {
+  img {
+    width: 40px;
+    margin-right: 0.6em;
+  }
+  h2 {
+    transition: 0.4s;
+  }
+  &:hover > h2 {
+    color: #dec129;
+  }
+}
+
+#add {
+  a {
+    color: #dec129;
+  }
+  &:hover {
+    background-color: #efefef;
+  }
+}
